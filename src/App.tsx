@@ -3,7 +3,7 @@ import TaskCreator from './_component/TaskCreator'
 import './App.css'
 
 import type { TaskInterface } from './lib/type/TaskInterface'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { getTask, createTask, editTask, deleteTask } from './lib/action/crud'
 
 function App() {
