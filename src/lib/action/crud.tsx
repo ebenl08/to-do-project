@@ -3,7 +3,7 @@ import type { TaskInterface } from "../type/TaskInterface";
 export const createTask = (task: string) => {
   const data = getTask()
   data.push({
-    id: data[data.length - 1].id + 1, 
+    id: data.length > 0 ? data[data.length - 1].id + 1 : 1, 
     desc: task,
     isDone: false
   })
